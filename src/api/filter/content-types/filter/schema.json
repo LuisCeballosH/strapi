@@ -1,24 +1,24 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "filters",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
+    "singularName": "filter",
+    "pluralName": "filters",
+    "displayName": "Filter",
     "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "attributes": {
-    "name": {
+    "description": {
       "type": "string"
     },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "inversedBy": "categories"
+      "inversedBy": "filters"
     }
   }
 }

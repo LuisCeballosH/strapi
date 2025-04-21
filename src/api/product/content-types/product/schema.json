@@ -33,10 +33,10 @@
     "price": {
       "type": "decimal"
     },
-    "categories": {
+    "filters": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::category.category",
+      "target": "api::filter.filter",
       "mappedBy": "products"
     }
   }

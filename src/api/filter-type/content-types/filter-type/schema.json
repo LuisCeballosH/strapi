@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filter_types",
+  "info": {
+    "singularName": "filter-type",
+    "pluralName": "filter-types",
+    "displayName": "Filter type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "filters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::filter.filter"
+    }
+  }
+}
