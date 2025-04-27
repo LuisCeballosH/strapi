@@ -31,11 +31,29 @@
       "type": "decimal",
       "required": true
     },
-    "categories": {
+    "tags": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::category.category",
+      "target": "api::tag.tag",
       "mappedBy": "products"
+    },
+    "availability": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::availability.availability",
+      "inversedBy": "products"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "products"
+    },
+    "product_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-type.product-type",
+      "inversedBy": "products"
     }
   }
 }
