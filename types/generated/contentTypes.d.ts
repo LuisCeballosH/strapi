@@ -374,7 +374,7 @@ export interface ApiAvailabilityAvailability
   collectionName: 'availabilities';
   info: {
     description: '';
-    displayName: 'availability';
+    displayName: 'Availability';
     pluralName: 'availabilities';
     singularName: 'availability';
   };
